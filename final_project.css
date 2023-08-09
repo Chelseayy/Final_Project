@@ -1,0 +1,127 @@
+/* universal setting */
+body{
+    margin: 0;
+    background-color: antiquewhite !important;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none !important; 
+    color: white !important;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    background-color: #135740;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+header img{
+    width: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* main navigation menu */
+.main_menu{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 8rem;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: #135740;
+    color: white;
+}
+/* list style of the main navigation menu and the droplist */
+li{
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+.main_menu li {
+    padding: 15px;
+}
+/* navigation droplist setup */
+.main_menu li:hover ul.dropdownlist {
+    display: block;
+}
+.dropdownlist{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    background-color: #f38282;
+}
+ul.dropdownlist li {
+    padding: 10px;
+}
+
+/* Set the spacer's height equal to the banner height */
+.spacer {
+    height: 15rem; 
+}
+
+/* image size change with the width of the screen */
+img.frontPage{
+    width: 50vw;
+}
+article.frontPage{
+    display: flex;
+    align-items: center;
+    margin: 1rem 5rem 1rem 5rem;
+}
+
+/* front page text font */
+p.frontPage{
+    margin: 3vw;
+    font-size: large;
+    font-size: 2vw;
+}
+/* first letter larger */
+p.frontPage::first-letter {
+    font-size: 2em; 
+    font-weight: bold; 
+  }
+
+/* divider of different section */
+.divider_line img{
+    width: 100%;
+    margin: 5rem auto;
+  }
+
+.inventoryList{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.inventoryList a{
+    aspect-ratio: 3/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f38282;
+    border: 10px solid antiquewhite;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.family_name{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.family_name a{
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f38282;
+    border: 10px solid antiquewhite;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+}

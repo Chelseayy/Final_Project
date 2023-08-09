@@ -1,0 +1,8 @@
+#newItem{
+    list-style-type: none;
+    padding-left: 0;
+}
+li{
+    display: flex;
+    align-items: center;
+}
