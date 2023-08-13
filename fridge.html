@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="./fridge.css">
+<body>
+    <!-- header for all pages -->
+    <header>
+        <a href="./index.html">
+            <img src="logo.jpeg" alt="">
+        </a> 
+        <h1>HouseholdHub Fridge</h1>
+    </header>
+    
+    <!-- main menu for all pages -->
+    <ul class="main_menu">
+        <li>Household</a>
+            <ul class="household_menu dropdownlist">
+                <li><a href="./index.html #inventory">Inventory</a></li>
+                <li><a href="checklist.html">Check list</a></li>
+            </ul>
+        </li>
+        <li>Family Members
+            <ul class="family_member_menu dropdownlist">
+                <li><a href="./index.html #eleanor">Eleanor</a></li>
+                <li><a href="./index.html #chelsea">Chelsea</a></li>
+                <li><a href="./index.html #jason">Jason</a></li>
+                <li>Add Family Members...</li>
+            </ul>
+        </li>
+        <li>Things to Buy</li>
+        <li>Household Chores</li>
+        <li>Dish Order</li>
+        <li>Travel Plan</li>
+        <li>Gardening</li>
+        <li>Things to Fix</li>
+    </ul>
+
+     <!-- keep the content down -->
+    <div class="spacer"></div>
+    <section id="itemList">
+        <input type="text" id="newItemInput" placeholder="What we have...">
+        <button onclick="addItem()">Add</button>
+        <ul id="newItem">
+            <!-- new item will be here -->
+        </ul>
+    </section>
+    
+    <script src="fridge.js"></script>
+</body>
+</html>
