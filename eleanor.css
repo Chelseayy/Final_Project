@@ -113,10 +113,10 @@ ul.dropdownlist li {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 10vw;
     position: fixed;
     top: 15rem;
-    right: 0;
+    right: 10rem;
   }
 
 .clothes #selected-image {
