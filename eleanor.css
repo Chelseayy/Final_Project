@@ -1,17 +1,17 @@
 /* universal setting */
-body{
+body {
     margin: 0;
     background-color: antiquewhite !important;
 }
-p{
+p {
     font-family: 'Poppins', sans-serif;
 }
-a{
+a {
     text-decoration: none !important; 
     color: white !important;
 }
 
-header{
+header {
     display: flex;
     width: 100%;
     align-items: center;
@@ -22,14 +22,14 @@ header{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-header img{
+header img {
     width: 5rem;
     margin-left: 4rem;
     margin-right: 3rem;
     border-radius: 5px;
 }
 /* main navigation menu */
-.main_menu{
+.main_menu {
     width: 100%;
     display: flex;
     position: fixed;
@@ -41,7 +41,7 @@ header img{
     color: white;
 }
 /* list style of the main navigation menu and the droplist */
-li{
+li {
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
 }
@@ -52,7 +52,7 @@ li{
 .main_menu li:hover ul.dropdownlist {
     display: block;
 }
-.dropdownlist{
+.dropdownlist {
     display: none;
     list-style-type: none;
     padding: 0;
@@ -66,33 +66,34 @@ ul.dropdownlist li {
 
 /* Set the spacer's height equal to the banner height */
 .spacer {
-    height: 14rem; 
-}
-.spacer2 {
-    height: 2rem; 
+    height: 10rem; 
 }
 
 /* button */
-.btn-group{
+.btn-group {
     padding-left: 1rem;
     position: fixed !important;
+    top: 2rem;
+    right: 1rem;
 }
 
 /* clothes image */
 .clothes {
     display: flex;
+    margin-top: 2rem;
   }
-.left-panel{
-    margin-top: 0.5rem;
-    
-}
+
+
+
 .left-panel .tops {
     width: 70vw;
     border: 1px solid #135740;
     padding: 10px;
     margin-right: 30px;
     margin-left: 10px;
+    flex: 1;
   }
+
 .left-panel .pants {
     width: 70vw;
     border: 1px solid #135740;
@@ -108,26 +109,29 @@ ul.dropdownlist li {
     margin-left: 10px;
 }
 
-.clothes .right-panel {
-    border: 1px solid #135740;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 10vw;
-    position: fixed;
-    top: 15rem;
-    right: 10rem;
-  }
 
 .clothes #selected-image {
     position: relative;
     margin-right: 10px;
   }
-
+.clothes .right-panel {
+    border: 1px solid #135740;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    position: fixed;
+    top: 12rem;
+    right: 0;
+    bottom: 1rem;
+    overflow: scroll;
+}
 .clothes .selected-image img {
     width: 100%;
     height: auto;
-    background-size: cover;
+    /* height: 100%;
+    width: auto; */
+    
   }
 .delete-icon {
     position: absolute;
@@ -139,13 +143,12 @@ ul.dropdownlist li {
   }
 
 .image-option {
-    display: block;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
     cursor: pointer;
-  }
-  .image-option img {
+}
+.image-option img {
     width: 100%;
-  }
+}
