@@ -1,35 +1,35 @@
 /* universal setting */
-body {
+body{
     margin: 0;
     background-color: antiquewhite !important;
 }
-p {
+p{
     font-family: 'Poppins', sans-serif;
 }
-a {
+a{
     text-decoration: none !important; 
     color: white !important;
 }
 
-header {
+header{
     display: flex;
     width: 100%;
     align-items: center;
     position: fixed;
-    background-color: #135740;
+    background-image: url('./footer.jpeg');
+    background-size: cover;
     color: white;
-    padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-header img {
+header img{
     width: 5rem;
-    margin-left: 4rem;
-    margin-right: 3rem;
+    margin-left: 4vw;
+    margin-right: 5vw;
     border-radius: 5px;
 }
 /* main navigation menu */
-.main_menu {
+.main_menu{
     width: 100%;
     display: flex;
     position: fixed;
@@ -39,9 +39,10 @@ header img {
     padding: 0;
     background-color: #187254;
     color: white;
+    z-index: 2;
 }
 /* list style of the main navigation menu and the droplist */
-li {
+li{
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
 }
@@ -52,7 +53,7 @@ li {
 .main_menu li:hover ul.dropdownlist {
     display: block;
 }
-.dropdownlist {
+.dropdownlist{
     display: none;
     list-style-type: none;
     padding: 0;
@@ -66,7 +67,7 @@ ul.dropdownlist li {
 
 /* Set the spacer's height equal to the banner height */
 .spacer {
-    height: 10rem; 
+    height: 15vh; 
 }
 
 /* button */
@@ -75,6 +76,7 @@ ul.dropdownlist li {
     position: fixed !important;
     top: 2rem;
     right: 1rem;
+    z-index: 1;
 }
 
 /* clothes image */
@@ -83,56 +85,43 @@ ul.dropdownlist li {
     margin-top: 2rem;
   }
 
-
-
-.left-panel .tops {
-    width: 70vw;
-    border: 1px solid #135740;
+.left-panel {
+    width: 72vw;
     padding: 10px;
-    margin-right: 30px;
-    margin-left: 10px;
-    flex: 1;
-  }
-
-.left-panel .pants {
-    width: 70vw;
-    border: 1px solid #135740;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.left-panel .shoes {
-    width: 70vw;
-    border: 1px solid #135740;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
-
-.clothes #selected-image {
-    position: relative;
-    margin-right: 10px;
-  }
 .clothes .right-panel {
-    border: 1px solid #135740;
+    /* background-color: rgb(238, 238, 221); */
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    align-items: center;
+    width: 27vw;
     position: fixed;
-    top: 12rem;
+    top: 20vh;
     right: 0;
     bottom: 1rem;
     overflow: scroll;
 }
+
+.clothes .right-panel::-webkit-scrollbar {
+    width: 12px;
+}
+
+.clothes .selected-image {
+    position: relative;
+    margin-right: 10px;
+    width: 100%;
+  }
+
 .clothes .selected-image img {
     width: 100%;
     height: auto;
-    /* height: 100%;
-    width: auto; */
-    
-  }
+    object-fit: cover;
+    max-width: 10rem;
+}
+
+
 .delete-icon {
     position: absolute;
     top: 0;
@@ -140,7 +129,7 @@ ul.dropdownlist li {
     background-color: #fff;
     padding: 2px;
     cursor: pointer;
-  }
+}
 
 .image-option {
     display: flex;
@@ -148,7 +137,38 @@ ul.dropdownlist li {
     align-items: center;
     margin-bottom: 10px;
     cursor: pointer;
+    
 }
 .image-option img {
     width: 100%;
+    transition: transform 0.3s;
+}
+.image-option img:hover {
+    transform: scale(1.2); 
+}
+
+
+@media (max-width: 768px) {
+    .btn-group{
+        position: fixed !important;
+        top: 20vh;
+        left: 1rem;
+    }
+    .left-panel {
+        width: 72vw;
+        padding: 10px;
+      }
+    .clothes .right-panel {
+        width: 50vw;
+    }
+    .left-panel{
+        width: 50vw;
+    }
+    .spacer {
+        height: 20vh; 
+    }
+    .clothes .right-panel{
+        top: 25vh;
+    }
+
 }

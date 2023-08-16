@@ -16,16 +16,16 @@ header{
     width: 100%;
     align-items: center;
     position: fixed;
-    background-color: #135740;
+    background-image: url('./footer.jpeg');
+    background-size: cover;
     color: white;
-    padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 header img{
     width: 5rem;
-    margin-left: 4rem;
-    margin-right: 3rem;
+    margin-left: 4vw;
+    margin-right: 5vw;
     border-radius: 5px;
 }
 /* main navigation menu */
@@ -66,17 +66,17 @@ ul.dropdownlist li {
 
 /* Set the spacer's height equal to the banner height */
 .spacer {
-    height: 14rem; 
+    height: 20vh; 
 }
 
 /* image size change with the width of the screen */
 img.frontPage{
-    width: 50vw;
+    width: 40vw;
 }
 article.frontPage{
     display: flex;
     align-items: center;
-    margin: 1rem 5rem 1rem 5rem;
+    margin: 1vw 5vw;
 }
 
 /* front page text font */
@@ -87,7 +87,7 @@ p.frontPage{
 }
 /* first letter larger */
 p.frontPage::first-letter {
-    font-size: 2em; 
+    font-size: 4vw; 
     font-weight: bold; 
   }
 

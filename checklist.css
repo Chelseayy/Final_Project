@@ -16,16 +16,16 @@ header{
     width: 100%;
     align-items: center;
     position: fixed;
-    background-color: #135740;
+    background-image: url('./footer.jpeg');
+    background-size: cover;
     color: white;
-    padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 header img{
     width: 5rem;
-    margin-left: 4rem;
-    margin-right: 3rem;
+    margin-left: 4vw;
+    margin-right: 5vw;
     border-radius: 5px;
 }
 /* main navigation menu */
@@ -66,8 +66,9 @@ ul.dropdownlist li {
 
 /* Set the spacer's height equal to the banner height */
 .spacer {
-    height: 13rem; 
+    height: 20vh; 
 }
+
 input{
     width: 20rem;
     height: 2rem;
@@ -101,4 +102,13 @@ section{
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: white;
+}
+@media (max-width: 768px){
+    input{
+        width: 15rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        margin-left: 0.5rem;
+    }
 }

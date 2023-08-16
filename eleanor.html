@@ -28,24 +28,19 @@
     <ul class="main_menu">
         <li>Household</a>
             <ul class="household_menu dropdownlist">
-                <li><a href="./index.html#inventory">Inventory</a></li>
+                <li><a href="./index.html #inventory">Inventory</a></li>
                 <li><a href="checklist.html">Check list</a></li>
             </ul>
         </li>
         <li>Family Members
             <ul class="family_member_menu dropdownlist">
-                <li><a href="./index.html#eleanor">Eleanor</a></li>
-                <li><a href="./index.html#chelsea">Chelsea</a></li>
-                <li><a href="./index.html#jason">Jason</a></li>
+                <li><a href="./eleanor.html">Eleanor</a></li>
+                <li><a href="./chelsea.html">Chelsea</a></li>
+                <li><a href="./jason.html">Jason</a></li>
                 <li>Add Family Members...</li>
             </ul>
         </li>
-        <li>Things to Buy</li>
-        <li>Household Chores</li>
-        <li>Dish Order</li>
-        <li>Travel Plan</li>
         <li>Gardening</li>
-        <li>Things to Fix</li>
     </ul>
 
 
@@ -60,10 +55,6 @@
     </div>
 
     <div class="clothes">
-        <div class="right-panel" id="selected-images">
-            <!-- Selected images will be displayed here -->
-        </div>
-
         <div class="left-panel">
             <!-- tops -->
             <div class="tops row">
@@ -106,7 +97,6 @@
                 </div>
                 <div class="image-option col-md-3 col-sm-4" onclick="showImage('https://gw.alicdn.com/bao/uploaded/i2/2200639092332/O1CN01z0UBWd1T66SZPZVz5_!!2200639092332.jpg_Q75.jpg_.webp')"><img src="https://gw.alicdn.com/bao/uploaded/i2/2200639092332/O1CN01z0UBWd1T66SZPZVz5_!!2200639092332.jpg_Q75.jpg_.webp" alt="">7
                 </div>
-            
             </div>
             <!-- shoes -->
             <div class="shoes row">
@@ -127,12 +117,14 @@
                 </div>
             </div>
         </div>
+        <div class="right-panel">
+            <h3>Selected Clothes</h3>
+            <div class="selected-images" id="selected-images">
+                <!-- Selected images will be displayed here -->
+            </div>
+        </div>
         
     </div>
-
-        
-
-      
-
-      <script src="eleanor.js"></script>
+         
+    <script src="eleanor.js"></script>
     </body>
